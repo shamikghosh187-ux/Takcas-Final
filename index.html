@@ -154,16 +154,6 @@
             scrollbar-color: rgba(167, 139, 250, 0.3) transparent;
         }
 
-        #chat-box:empty::before {
-            content: "Start a conversation";
-            align-self: center;
-            margin: auto;
-            color: rgba(174, 185, 204, 0.42);
-            font-size: 14px;
-            letter-spacing: 0.02em;
-            pointer-events: none;
-        }
-
         .message-wrapper {
             display: flex;
             flex-direction: column;
@@ -271,6 +261,7 @@
             line-height: 1.5;
             resize: none;
             height: 46px;
+            min-height: 46px;
             max-height: 120px;
             transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
         }
